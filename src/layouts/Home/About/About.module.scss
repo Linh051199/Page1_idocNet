@@ -1,0 +1,45 @@
+.wrapper {
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__item1,
+.about__item2,
+.about__item3 {
+  text-align: left;
+
+  margin-bottom: 100px;
+}
+.about__item1 {
+  width: 40%;
+}
+
+.about__item2 {
+  width: 20%;
+}
+.about__item3 {
+  width: 20%;
+}
+
+.about__itemHeaderHighlight {
+  font-size: var(--font-size32);
+  font-weight: var(--font-weight-medium);
+  color: #2a27e9;
+  margin-top: 110px;
+  margin-bottom: 30px;
+}
+
+.about__itemHeader {
+  font-size: var(--font-size24);
+  color: var(--text-color-black);
+  margin-top: 110px;
+  margin-bottom: 30px;
+}
+
+.about__itemBody {
+  font-size: var(--font-size18);
+  color: #4c4d52;
+}

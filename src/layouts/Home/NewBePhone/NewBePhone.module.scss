@@ -1,0 +1,60 @@
+.wrapper {
+}
+
+.question {
+  font-size: var(--font-size20);
+  margin-top: 110px;
+}
+
+.header {
+  font-size: var(--font-size42);
+  font-weight: var(--font-weight-medium);
+  margin-bottom: 50px;
+}
+
+.header__highlight {
+  font-size: var(--font-size42);
+  color: #2a27e9;
+}
+
+.newBePhone {
+  display: flex;
+}
+
+.newBePhone__item1,
+.newBePhone__item2 {
+  display: flex;
+  align-items: center;
+  flex: 1;
+
+  padding: 20px;
+  height: 290px;
+  background-color: #f7f7f7;
+  border-radius: 16px;
+  margin-bottom: 100px;
+}
+.newBePhone__item1 {
+  margin-right: 10px;
+}
+.newBePhone__item2 {
+  margin-left: 10px;
+}
+.newBePhone__itemTitle {
+  text-align: left;
+}
+
+.newBePhone__itemTitleHeader {
+  font-size: var(--font-size32);
+}
+
+.newBePhone__itemTitleBody,
+.newBePhone__itemTitleShow {
+  font-size: var(--font-size20);
+  margin: 10px 0;
+}
+
+.newBePhone__itemImg {
+  width: 241px;
+  height: 231px;
+  border-radius: 16px;
+}

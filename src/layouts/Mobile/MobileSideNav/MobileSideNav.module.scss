@@ -1,0 +1,121 @@
+.wrapper {
+}
+
+.mobile__title {
+  font-size: var(--font-size42);
+  font-weight: var(--font-weight-medium);
+  color: #0b1a48;
+  margin: 60px 0;
+}
+
+.mobile__brand,
+.mobile__color,
+.mobile__hdd,
+.mobile__screen,
+.mobile__inStock,
+.mobile__outOfStock {
+  font-size: var(--font-size16);
+  color: #4c4d52;
+}
+
+.mobile__brand {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #dedede;
+  padding-bottom: 10px;
+}
+.mobile__brandList {
+  margin-top: 10px;
+}
+
+.mobile__color {
+  padding: 10px 0;
+  border-bottom: 1px solid #dedede;
+}
+.mobile__colorList {
+  display: flex;
+  margin-top: 10px;
+}
+
+.mobile__colorItem1,
+.mobile__colorItem2,
+.mobile__colorItem3,
+.mobile__colorItem4,
+.mobile__colorItem5,
+.mobile__colorItem6,
+.mobile__colorItem7 {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+
+  border: 3px solid #dbd0d0;
+  margin-right: 10px;
+}
+
+.mobile__colorItem1 {
+  background-color: #01b8e4;
+}
+
+.mobile__colorItem2 {
+  background-color: #262525;
+}
+
+.mobile__colorItem3 {
+  background-color: #c2c2c2;
+}
+
+.mobile__colorItem4 {
+  background-color: #c2f45a;
+}
+
+.mobile__colorItem5 {
+  background-color: #a13bcf;
+}
+
+.mobile__colorItem6 {
+  background-color: #ff655e;
+}
+
+.mobile__colorItem7 {
+  background-color: #ffffff;
+}
+
+.mobile__hdd {
+  border-bottom: 1px solid #dedede;
+  padding: 10px 0;
+}
+.mobile__hddList {
+  display: flex;
+  margin-top: 10px;
+}
+
+.mobile__hddItem {
+  font-size: var(--font-size14);
+  font-weight: var(--font-weight-light);
+  margin-right: 10px;
+  padding: 2px 10px;
+  border-radius: 3px;
+  border: 1px solid #dedede;
+}
+
+.mobile__screen {
+  padding: 10px 0;
+  margin-bottom: 70px;
+}
+.mobile__screenList {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.mobile__screenItem {
+  font-size: var(--font-size14);
+  font-weight: var(--font-weight-light);
+  margin: 5px 10px 5px 0;
+  padding: 2px 10px;
+  border-radius: 3px;
+  border: 1px solid #dedede;
+}
+
+.mobile__inStock,
+.mobile__outOfStock {
+}

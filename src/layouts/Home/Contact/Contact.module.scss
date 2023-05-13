@@ -1,0 +1,92 @@
+.wrapper {
+  background-image: url(https://themes.muffingroup.com/betheme-store2/wp-content/uploads/2022/08/bethemestore2-section-bg2.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+}
+
+.contact__title {
+  text-align: left;
+  flex: 1;
+}
+
+.contact__titleDecs {
+  font-size: var(--font-size16);
+  color: var(--text-color-white);
+}
+
+.contact__titleHighlight {
+  color: var(--text-color-white);
+  font-size: var(--font-size42);
+  font-weight: var(--font-weight-medium);
+  margin-bottom: 60px;
+}
+.contact__titleHighlightPercent {
+  background-color: #ffb300;
+  border-radius: 5px;
+}
+
+.contact__titleChecked {
+  display: flex;
+  color: var(--text-color-white);
+  font-size: var(--font-size20);
+}
+
+.contact__titleCheckedItem {
+  padding-right: 30px;
+}
+
+.contact__form {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 16px;
+  margin: 100px 0;
+}
+
+.contact__formTitle {
+  font-size: var(--font-size24);
+  font-weight: var(--font-weight-medium);
+  margin: 45px 0;
+}
+
+.contact__formInput {
+  height: 40px;
+  font-size: var(--font-size18);
+  padding-left: 10px;
+  width: 70%;
+  border-radius: 8px;
+  border: 1px solid #e7e7e7;
+  outline: none;
+  margin-bottom: 30px;
+  &:hover {
+    cursor: text;
+  }
+  &:focus {
+    border-color: #2a27e9;
+    background-color: #e7e7e7;
+  }
+}
+
+.contact__formBtn {
+  height: 48px;
+  width: 70%;
+  border-radius: 8px;
+  background-color: #2a27e9;
+  font-size: var(--font-size16);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-color-white);
+  margin-top: 30px;
+  margin-bottom: 60px;
+  border: none;
+  &:hover {
+    background-color: blue;
+  }
+}

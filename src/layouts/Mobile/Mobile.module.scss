@@ -1,0 +1,15 @@
+.container {
+  background-color: #f7f7f7;
+}
+.content {
+  display: flex;
+}
+.mobile__sideNav {
+  flex: 2;
+  text-align: left;
+}
+
+.mobile__content {
+  flex: 8;
+  text-align: left;
+}

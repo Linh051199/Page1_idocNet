@@ -1,0 +1,40 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  background-image: url(https://themes.muffingroup.com/betheme-store2/wp-content/uploads/2022/08/bethemestore2-section-bg1.webp);
+  background-size: auto;
+  background-position: center;
+  padding-top: 100px;
+  padding-bottom: 60px;
+  background-color: #f2f2f0;
+  background-repeat: no-repeat;
+  height: 583px;
+}
+.sound {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sound__title {
+  text-align: left;
+  width: 200px;
+}
+
+.sound__titleHeader {
+  font-size: var(--font-size42);
+  font-weight: var(--font-weight-medium);
+}
+
+.sound__titleDesc {
+  font-size: var(--font-size16);
+  font-weight: var(--font-weight-light);
+}
+
+.sound__item {
+  display: flex;
+}
+
+.sound__itemSub {
+  margin-left: 10px;
+}

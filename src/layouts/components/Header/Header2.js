@@ -9,6 +9,10 @@ const cx = classNames.bind(styles);
 function Header2() {
   const [showMenuComputer, setShowMenuComputer] = useState(false);
   const [showMenuSmartPhones, setShowMenuSmartPhones] = useState(false);
+  const [showMenuWatches, setShowMenuWatches] = useState(false);
+  const [showMenuTV, setShowMenuTV] = useState(false);
+  const [showMenuTablet, setShowMenuTablet] = useState(false);
+  const [showMenuGaming, setShowMenuGaming] = useState(false);
 
   const dataComputer = {
     data: ["PC's", "Laptops", "Notebooks", "PC Accessories"],
@@ -19,27 +23,113 @@ function Header2() {
       "https://themes.muffingroup.com/betheme-store2/wp-content/uploads/2022/08/bethemestore2-products-pic18.webp",
   };
   const dataSmartPhone = {
-    data: ["1", "2", "3", "PC 4"],
-    imgHidden: images.laptopHidden,
-    title: "Computer",
-    desc: "Customers choice",
+    data: [
+      "5G phones",
+      "Phone Accessories",
+      "Prepaid phones",
+      "Unlocked phones",
+    ],
+    imgHidden: images.SmartPhoneHidden,
+    title: "Smartphones",
+    desc: "Our choice",
     imgDevice:
-      "https://themes.muffingroup.com/betheme-store2/wp-content/uploads/2022/08/bethemestore2-products-pic18.webp",
+      "https://themes.muffingroup.com/betheme-store2/wp-content/uploads/2022/08/bethemestore2-products-pic16.webp",
+  };
+
+  const dataWatches = {
+    data: ["Fitness trackers", "Smart watches", "Smartwatch accessories"],
+    imgHidden: images.WatchesHidden,
+    title: "Watches",
+    desc: "Tech Awards",
+    imgDevice:
+      "https://themes.muffingroup.com/betheme-store2/wp-content/uploads/2022/08/bethemestore2-products-pic10.webp",
+  };
+
+  const dataTV = {
+    data: ["Earphones", "Headphones", "Smart TV", "TV Accessories"],
+    imgHidden: images.TVHidden,
+    title: "TV/Audio",
+    desc: "Bestseller",
+    imgDevice:
+      "https://themes.muffingroup.com/betheme-store2/wp-content/uploads/2022/08/bethemestore2-products-pic5.webp",
+  };
+
+  const dataTablet = {
+    data: ["Ebook-Reader", "Kids Tablets", "Tablet accessories"],
+    imgHidden: images.TabletHidden,
+    title: "Tablets",
+    desc: "Tech Awards",
+    imgDevice:
+      "https://themes.muffingroup.com/betheme-store2/wp-content/uploads/2022/08/bethemestore2-products-pic8.webp",
+  };
+
+  const dataGaming = {
+    data: ["Audio", "Gaming accesories", "Gaming devices", "Gaming displays"],
+    imgHidden: images.GamingHidden,
+    title: "Gaming",
+    desc: "Top products",
+    imgDevice:
+      "https://themes.muffingroup.com/betheme-store2/wp-content/uploads/2022/08/bethemestore2-products-pic7.webp",
   };
 
   const handldeMouseOverComouter = (e) => {
-    console.log(e.target.accessKey);
     setShowMenuComputer(true);
     setShowMenuSmartPhones(false);
+    setShowMenuWatches(false);
+    setShowMenuTV(false);
+    setShowMenuTablet(false);
+    setShowMenuGaming(false);
   };
   const handldeMouseOverSmartPhones = (e) => {
-    console.log(e.target.accessKey);
     setShowMenuComputer(false);
     setShowMenuSmartPhones(true);
+    setShowMenuWatches(false);
+    setShowMenuTV(false);
+    setShowMenuTablet(false);
+    setShowMenuGaming(false);
   };
-  const handldeMouseLeave = (e) => {
-    // setShowMenuItem(false);
+  const handldeMouseOverWatches = (e) => {
+    setShowMenuComputer(false);
+    setShowMenuSmartPhones(false);
+    setShowMenuWatches(true);
+    setShowMenuTV(false);
+    setShowMenuTablet(false);
+    setShowMenuGaming(false);
   };
+  const handldeMouseOverTV = (e) => {
+    setShowMenuComputer(false);
+    setShowMenuSmartPhones(false);
+    setShowMenuWatches(false);
+    setShowMenuTV(true);
+    setShowMenuTablet(false);
+    setShowMenuGaming(false);
+  };
+  const handldeMouseOverTablets = (e) => {
+    setShowMenuComputer(false);
+    setShowMenuSmartPhones(false);
+    setShowMenuWatches(false);
+    setShowMenuTV(false);
+    setShowMenuTablet(true);
+    setShowMenuGaming(false);
+  };
+  const handldeMouseOverGaming = (e) => {
+    setShowMenuComputer(false);
+    setShowMenuSmartPhones(false);
+    setShowMenuWatches(false);
+    setShowMenuTV(false);
+    setShowMenuTablet(false);
+    setShowMenuGaming(true);
+  };
+
+  const handlOnMouseLeaveHeader2Bottom = () => {
+    setShowMenuComputer(false);
+    setShowMenuSmartPhones(false);
+    setShowMenuWatches(false);
+    setShowMenuTV(false);
+    setShowMenuTablet(false);
+    setShowMenuGaming(false);
+  };
+
   return (
     <div className={cx("header__2")}>
       <div className={cx("header__2-des", "grid", "wide")}>
@@ -95,101 +185,155 @@ function Header2() {
             </div>
           </div>
         </div>
-        <div className={cx("header__2-nav")}>
-          <div>home</div>
-          <ul className={cx("header__2-menu")}>
-            <li className={cx("header__2-menuItem")}>
+        <div
+          className={cx("header__2-bottom")}
+          onMouseLeave={handlOnMouseLeaveHeader2Bottom}
+        >
+          <div className={cx("header__2-nav")}>
+            <ul className={cx("header__2-menu")}>
               <div
                 onMouseOver={handldeMouseOverComouter}
-                onMouseLeave={handldeMouseLeave}
+                className={cx("header__2-menuItem")}
               >
-                Computers
+                <div>
+                  <img src={images.menuIconLaptop} alt="img" />
+                </div>
+                <div className={cx("header__2-menuItemName")}> Computers </div>
+                <i class="fa-solid fa-chevron-down"></i>
               </div>
-              <ul>
-                <li>PC's</li>
-                <li>Laptops</li>
-                <li>Notebooks</li>
-                <li>PC Accessories</li>
-              </ul>
-            </li>
-            <li className={cx("header__2-menuItem")}>
               <div
                 onMouseOver={handldeMouseOverSmartPhones}
-                onMouseLeave={handldeMouseLeave}
+                className={cx("header__2-menuItem")}
               >
-                SmartPhones
+                <div>
+                  <img src={images.menuIconSmartPhone} alt="img" />
+                </div>
+                <div className={cx("header__2-menuItemName")}>
+                  {" "}
+                  SmartPhones{" "}
+                </div>
+                <i class="fa-solid fa-chevron-down"></i>
               </div>
-              <ul className={cx("header__2-menuItemInfo")}>
+              <div
+                onMouseOver={handldeMouseOverWatches}
+                className={cx("header__2-menuItem")}
+              >
                 <div>
-                  <li>5G phones</li>
-                  <li>Phone Accessories</li>
-                  <li>Prepaid phones</li>
-                  <li>Unlocked phones</li>
+                  <img src={images.menuIconWatches} alt="img" />
                 </div>
+                <div className={cx("header__2-menuItemName")}> Watches </div>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div
+                onMouseOver={handldeMouseOverTV}
+                className={cx("header__2-menuItem")}
+              >
                 <div>
-                  <img
-                    className="header__2-menuItemImgDevice"
-                    src="https://themes.muffingroup.com/betheme-store2/wp-content/uploads/2022/08/bethemestore2-products-pic18.webp"
-                    alt="img"
-                    width="200px"
-                    height="200px"
-                  ></img>
+                  <img src={images.menuIconTV} alt="img" />
                 </div>
-              </ul>
-            </li>
-            <li className={cx("header__2-menuItem")}>
-              <span>Watches</span>
-              <ul>
-                <li>Fitness trackers</li>
-                <li>Smart watches</li>
-                <li>Smartwatch accessories</li>
-              </ul>
-            </li>
-            <li className={cx("header__2-menuItem")}>
-              <span>TV/Audio</span>
-              <ul>
-                <li>Earphones</li>
-                <li>Headphones</li>
-                <li>Smart TV</li>
-                <li>TV Accessories</li>
-              </ul>
-            </li>
-            <li className={cx("header__2-menuItem")}>
-              <span>Tablets</span>
-              <ul>
-                <li>Ebook-Reader</li>
-                <li>Kids Tablets</li>
-                <li>Tablet accessories</li>
-              </ul>
-            </li>
-            <li className={cx("header__2-menuItem")}>
-              <span>Gaming</span>
-              <ul>
-                <li>Audio</li>
-                <li>Gaming accesories</li>
-                <li>Gaming devices</li>
-                <li>Gaming displays</li>
-              </ul>
-            </li>
-            <li className={cx("header__2-menuItem")}>
-              <span>View all</span>
-            </li>
-          </ul>
+                <div className={cx("header__2-menuItemName")}> TV/Audio </div>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div
+                onMouseOver={handldeMouseOverTablets}
+                className={cx("header__2-menuItem")}
+              >
+                <div>
+                  <img src={images.menuIconTablet} alt="img" />
+                </div>
+                <div className={cx("header__2-menuItemName")}> Tablets </div>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div
+                onMouseOver={handldeMouseOverGaming}
+                className={cx("header__2-menuItem")}
+              >
+                <div>
+                  <img src={images.menuIconGaming} alt="img" />
+                </div>
+                <div className={cx("header__2-menuItemName")}> Gaming </div>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div
+                onMouseOver={handlOnMouseLeaveHeader2Bottom}
+                className={cx("header__2-menuItem")}
+              >
+                <div>
+                  <img src={images.menuIconViewAll} alt="img" />
+                </div>
+                <span className={cx("header__2-menuItemName")}>View all</span>
+              </div>
+            </ul>
+          </div>
+          <div className={cx("header__2-navSub")}>
+            {showMenuComputer && (
+              <MenuItem
+                data={dataComputer}
+                setShowMenuComputer={setShowMenuComputer}
+                setShowMenuSmartPhones={setShowMenuSmartPhones}
+                setShowMenuWatches={setShowMenuWatches}
+                setShowMenuTV={setShowMenuTV}
+                setShowMenuTablet={setShowMenuTablet}
+                setShowMenuGaming={setShowMenuGaming}
+              />
+            )}
+            {showMenuSmartPhones && (
+              <MenuItem
+                data={dataSmartPhone}
+                setShowMenuComputer={setShowMenuComputer}
+                setShowMenuSmartPhones={setShowMenuSmartPhones}
+                setShowMenuWatches={setShowMenuWatches}
+                setShowMenuTV={setShowMenuTV}
+                setShowMenuTablet={setShowMenuTablet}
+                setShowMenuGaming={setShowMenuGaming}
+              />
+            )}
+            {showMenuWatches && (
+              <MenuItem
+                data={dataWatches}
+                setShowMenuComputer={setShowMenuComputer}
+                setShowMenuSmartPhones={setShowMenuSmartPhones}
+                setShowMenuWatches={setShowMenuWatches}
+                setShowMenuTV={setShowMenuTV}
+                setShowMenuTablet={setShowMenuTablet}
+                setShowMenuGaming={setShowMenuGaming}
+              />
+            )}
+            {showMenuTV && (
+              <MenuItem
+                data={dataTV}
+                setShowMenuComputer={setShowMenuComputer}
+                setShowMenuSmartPhones={setShowMenuSmartPhones}
+                setShowMenuWatches={setShowMenuWatches}
+                setShowMenuTV={setShowMenuTV}
+                setShowMenuTablet={setShowMenuTablet}
+                setShowMenuGaming={setShowMenuGaming}
+              />
+            )}
+            {showMenuTablet && (
+              <MenuItem
+                data={dataTablet}
+                setShowMenuComputer={setShowMenuComputer}
+                setShowMenuSmartPhones={setShowMenuSmartPhones}
+                setShowMenuWatches={setShowMenuWatches}
+                setShowMenuTV={setShowMenuTV}
+                setShowMenuTablet={setShowMenuTablet}
+                setShowMenuGaming={setShowMenuGaming}
+              />
+            )}
+            {showMenuGaming && (
+              <MenuItem
+                data={dataGaming}
+                setShowMenuComputer={setShowMenuComputer}
+                setShowMenuSmartPhones={setShowMenuSmartPhones}
+                setShowMenuWatches={setShowMenuWatches}
+                setShowMenuTV={setShowMenuTV}
+                setShowMenuTablet={setShowMenuTablet}
+                setShowMenuGaming={setShowMenuGaming}
+              />
+            )}
+          </div>
         </div>
-        {showMenuComputer && (
-          <MenuItem
-            data={dataComputer}
-            setShowMenuComputer={setShowMenuComputer}
-            setShowMenuSmartPhones={setShowMenuSmartPhones}
-          />
-        )}
-        {showMenuSmartPhones && (
-          <MenuItem
-            data={dataSmartPhone}
-            setShowMenuSmartPhones={setShowMenuSmartPhones}
-            setShowMenuComputer={setShowMenuComputer}
-          />
-        )}
       </div>
     </div>
   );

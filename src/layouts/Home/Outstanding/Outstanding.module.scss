@@ -1,0 +1,29 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  height: 300px;
+}
+
+.outstanding__item {
+  margin: 70px 0;
+  padding: 0 20px;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+  transition-property: all;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.04);
+    cursor: pointer;
+  }
+}
+
+.outstanding__itemTitle {
+  font-size: var(--font-size20);
+  margin-top: 15px;
+}
+
+.outstanding__itemdesc {
+  font-size: var(--font-size16);
+  color: #9ba1b4;
+}

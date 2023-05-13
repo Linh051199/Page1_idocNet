@@ -1,0 +1,33 @@
+.wrapper {
+  margin-top: 165px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--font-size16);
+  color: #a8a8a8;
+}
+
+.title__showItem {
+}
+
+.title__list {
+  display: flex;
+}
+
+.title__listShow {
+  display: flex;
+}
+
+.title__listShowItem {
+  margin: 0 5px;
+  padding: 0 3px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.title__listTableImg {
+  color: black;
+}
