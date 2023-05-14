@@ -38,6 +38,7 @@
   background-color: transparent;
   font-size: var(--font-size16);
   margin-left: 10px;
+  width: 140px;
 }
 
 .content {
@@ -60,11 +61,17 @@
 
     justify-content: center;
   }
+  .title {
+    font-size: var(--font-size12);
+  }
 
   .content__list {
     flex-direction: column;
   }
   .content__item {
     margin-right: 0;
+  }
+  .title__showItem {
+    display: none;
   }
 }
