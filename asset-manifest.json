@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/page1_idocNet/static/css/main.d0d2fbc8.css",
-    "main.js": "/page1_idocNet/static/js/main.d40cd8f3.js",
+    "main.css": "/page1_idocNet/static/css/main.89d6c62a.css",
+    "main.js": "/page1_idocNet/static/js/main.9d6fea6e.js",
     "static/js/787.e19c923b.chunk.js": "/page1_idocNet/static/js/787.e19c923b.chunk.js",
     "static/media/addImg2.webp": "/page1_idocNet/static/media/addImg2.88bbc12b2879d7d2e05e.webp",
     "static/media/addImg1.webp": "/page1_idocNet/static/media/addImg1.fe419fd6e857310f3de7.webp",
@@ -45,12 +45,12 @@
     "static/media/menuIconLaptop.svg": "/page1_idocNet/static/media/menuIconLaptop.a606e42c490e4b10ebc9884c2030f52a.svg",
     "static/media/menuIconSmartphone.svg": "/page1_idocNet/static/media/menuIconSmartphone.b36e71b06a506f630c6ee44fe7dd7102.svg",
     "static/media/menuIconTablet.svg": "/page1_idocNet/static/media/menuIconTablet.4540a1384bf9a07757b7f15a0ec1161c.svg",
-    "main.d0d2fbc8.css.map": "/page1_idocNet/static/css/main.d0d2fbc8.css.map",
-    "main.d40cd8f3.js.map": "/page1_idocNet/static/js/main.d40cd8f3.js.map",
+    "main.89d6c62a.css.map": "/page1_idocNet/static/css/main.89d6c62a.css.map",
+    "main.9d6fea6e.js.map": "/page1_idocNet/static/js/main.9d6fea6e.js.map",
     "787.e19c923b.chunk.js.map": "/page1_idocNet/static/js/787.e19c923b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d0d2fbc8.css",
-    "static/js/main.d40cd8f3.js"
+    "static/css/main.89d6c62a.css",
+    "static/js/main.9d6fea6e.js"
   ]
 }
