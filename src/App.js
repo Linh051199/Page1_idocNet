@@ -5,12 +5,12 @@ import MobilePage from "./layouts/Mobile";
 import NavBarPage from "./layouts/components/NavBarPage";
 function App() {
   return (
-    <Router basename="/Page1_idocNet">
+    <Router>
       <div className="App">
         <Routes>
-          <Route path="/Page1_idocNet/" element={<NavBarPage />}></Route>
-          <Route path="/Page1_idocNet/home" element={<HomePage />}></Route>
-          <Route path="/Page1_idocNet/mobile" element={<MobilePage />}></Route>
+          <Route path="/page1_idocNet/" element={<NavBarPage />}></Route>
+          <Route path="/page1_idocNet/home" element={<HomePage />}></Route>
+          <Route path="/page1_idocNet/mobile" element={<MobilePage />}></Route>
         </Routes>
       </div>
     </Router>

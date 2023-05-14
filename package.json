@@ -1,7 +1,7 @@
 {
   "name": "page1",
   "version": "0.1.0",
-  "homepage": "https://myusername.github.io/Page1_idocNet",
+  "homepage": "https://myusername.github.io/page1_idocNet",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
