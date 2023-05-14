@@ -5,7 +5,7 @@ import MobilePage from "./layouts/Mobile";
 import NavBarPage from "./layouts/components/NavBarPage";
 function App() {
   return (
-    <Router>
+    <Router basename="/Page1_idocNet">
       <div className="App">
         <Routes>
           <Route path="/Page1_idocNet/" element={<NavBarPage />}></Route>
