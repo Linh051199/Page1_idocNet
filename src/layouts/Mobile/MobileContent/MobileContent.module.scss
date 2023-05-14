@@ -1,5 +1,6 @@
 .wrapper {
   margin-top: 165px;
+  margin-left: 30px;
 }
 
 .title {
@@ -30,4 +31,40 @@
 
 .title__listTableImg {
   color: black;
+}
+
+.title__select {
+  border: none;
+  background-color: transparent;
+  font-size: var(--font-size16);
+  margin-left: 10px;
+}
+
+.content {
+  display: flex;
+}
+
+.content__list {
+  display: flex;
+  margin-top: 50px;
+}
+
+.content__item {
+  margin-right: 20px;
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+  .content {
+    display: flex;
+
+    justify-content: center;
+  }
+
+  .content__list {
+    flex-direction: column;
+  }
+  .content__item {
+    margin-right: 0;
+  }
 }

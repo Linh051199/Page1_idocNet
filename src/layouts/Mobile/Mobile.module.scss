@@ -3,6 +3,7 @@
 }
 .content {
   display: flex;
+  padding-bottom: 140px;
 }
 .mobile__sideNav {
   flex: 2;
@@ -12,4 +13,15 @@
 .mobile__content {
   flex: 8;
   text-align: left;
+}
+
+/* Tablet - PC with low resolution */
+@media (max-width: 1023px) {
+  .content {
+    flex-direction: column;
+  }
+  .mobile__sideNav,
+  .mobile__content {
+    flex: 1;
+  }
 }

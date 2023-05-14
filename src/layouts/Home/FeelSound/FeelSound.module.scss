@@ -8,7 +8,6 @@
   padding-bottom: 60px;
   background-color: #f2f2f0;
   background-repeat: no-repeat;
-  height: 583px;
 }
 .sound {
   display: flex;
@@ -19,6 +18,7 @@
 .sound__title {
   text-align: left;
   width: 200px;
+  flex: 1;
 }
 
 .sound__titleHeader {
@@ -33,8 +33,22 @@
 
 .sound__item {
   display: flex;
+  margin: 20px 0;
 }
 
 .sound__itemSub {
   margin-left: 10px;
+}
+
+/* Tablet - PC with low resolution */
+@media (min-width: 740px) and (max-width: 1023px) {
+  .wrapper {
+    background-position: center left;
+  }
+}
+/* Mobile */
+@media (max-width: 739px) {
+  .wrapper {
+    display: none;
+  }
 }

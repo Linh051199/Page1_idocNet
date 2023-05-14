@@ -63,7 +63,7 @@ function Header1() {
               </li>
               <li>
                 <span className={cx("nav-Item-Title")}>
-                  Overlay styles <i class="fa-ssolid fa-chevron-right"></i>
+                  Overlay styles <i class="fa-solid fa-chevron-right"></i>
                 </span>
                 <ul className={cx("nav2")}>
                   <li className={cx("nav2-item")}>Overlay: Bottom Left</li>

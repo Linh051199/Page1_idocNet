@@ -134,8 +134,18 @@ function Header2() {
     <div className={cx("header__2")}>
       <div className={cx("header__2-des", "grid", "wide")}>
         <div className={cx("header__2-title")}>
-          <div className={cx("header__2-title-logo")}>
-            <img src={images.logo} alt="img" />
+          <div className={cx("mediaNav")}>
+            <label htmlFor="navMedia" className={cx("mediaNavIcon")}>
+              <i
+                class="fa-solid fa-bars"
+                style={{ fontSize: "30px", padding: "10px", color: "#4e56c9" }}
+              ></i>
+            </label>
+            <img
+              className={cx("header__2-title-logo")}
+              src={images.logo}
+              alt="img"
+            />
           </div>
 
           <div className={cx("header__2-title-search")}>
@@ -150,7 +160,7 @@ function Header2() {
           </div>
 
           <div className={cx("header__2-title-contact")}>
-            <div className={cx("header__2-title-contactItem")}>
+            <div className={cx("header__2-title-contactItem", "mediaTablet")}>
               <div className={cx("header__2-title-ctIcon")}>
                 <img src={images.headerIconCall} alt="img" />
               </div>
@@ -332,6 +342,61 @@ function Header2() {
                 setShowMenuGaming={setShowMenuGaming}
               />
             )}
+          </div>
+        </div>
+      </div>
+      <input
+        hidden
+        className={cx("navMediaInput")}
+        type="checkbox"
+        id="navMedia"
+      />
+      <div className={cx("navMedia")}>
+        <label htmlFor="navMedia" className={cx("navMediaBtnClose")}>
+          <i class="fa-solid fa-xmark"></i>
+        </label>
+        <div className={cx("navMediaList")}>
+          <div className={cx("navMediaItem")}>
+            <div className={cx("navMediaItemIcon")}>
+              <img src={images.menuIconLaptop} alt="img" />
+            </div>
+            Computers
+          </div>
+          <div className={cx("navMediaItem")}>
+            <div className={cx("navMediaItemIcon")}>
+              <img src={images.menuIconSmartPhone} alt="img" />
+            </div>
+            SmartPhones
+          </div>
+          <div className={cx("navMediaItem")}>
+            <div className={cx("navMediaItemIcon")}>
+              <img src={images.menuIconWatches} alt="img" />
+            </div>
+            Watches
+          </div>
+          <div className={cx("navMediaItem")}>
+            <div className={cx("navMediaItemIcon")}>
+              <img src={images.menuIconTV} alt="img" />
+            </div>
+            TV/Audio
+          </div>
+          <div className={cx("navMediaItem")}>
+            <div className={cx("navMediaItemIcon")}>
+              <img src={images.menuIconTablet} alt="img" />
+            </div>
+            Tablets
+          </div>
+          <div className={cx("navMediaItem")}>
+            <div className={cx("navMediaItemIcon")}>
+              <img src={images.menuIconGaming} alt="img" />
+            </div>
+            Gaming
+          </div>
+          <div className={cx("navMediaItem")}>
+            <div className={cx("navMediaItemIcon")}>
+              <img src={images.menuIconViewAll} alt="img" />
+            </div>
+            View all
           </div>
         </div>
       </div>

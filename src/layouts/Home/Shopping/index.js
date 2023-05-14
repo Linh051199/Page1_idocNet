@@ -67,18 +67,38 @@ function Shopping() {
           Exclusive brands in our store
         </div>
         <div className={cx("shopping__card")}>
-          <img src={images.shopoingIcon1} alt="img" width="100px" />
+          <img
+            className={cx("shopping__cardImg")}
+            src={images.shopoingIcon1}
+            alt="img"
+          />
           <div className={cx("shopping__cardItem")}>
-            <img src={images.shopoingIcon2} alt="img" width="100px" />
+            <img
+              className={cx("shopping__cardImg")}
+              src={images.shopoingIcon2}
+              alt="img"
+            />
           </div>
           <div className={cx("shopping__cardItem")}>
-            <img src={images.shopoingIcon3} alt="img" width="100px" />
+            <img
+              className={cx("shopping__cardImg")}
+              src={images.shopoingIcon3}
+              alt="img"
+            />
           </div>
           <div className={cx("shopping__cardItem")}>
-            <img src={images.shopoingIcon4} alt="img" width="100px" />
+            <img
+              className={cx("shopping__cardImg")}
+              src={images.shopoingIcon4}
+              alt="img"
+            />
           </div>
           <div className={cx("shopping__cardItem")}>
-            <img src={images.shopoingIcon5} alt="img" width="100px" />
+            <img
+              className={cx("shopping__cardImg")}
+              src={images.shopoingIcon5}
+              alt="img"
+            />
           </div>
         </div>
       </div>

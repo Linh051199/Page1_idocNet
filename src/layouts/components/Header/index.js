@@ -4,6 +4,7 @@ import classNames from "classnames/bind";
 import styles from "./Header.module.scss";
 import Header1 from "./Header1";
 import Header2 from "./Header2";
+import Title from "./Title";
 
 const cx = classNames.bind(styles);
 
@@ -26,10 +27,9 @@ function Header() {
   }, []);
   return (
     <div className={cx("wrapper")}>
+      {show && <Title />}
       {show && <Header1 />}
       <Header2 />
-
-      <div className={cx("header__2")}></div>
     </div>
   );
 }

@@ -33,23 +33,33 @@
 }
 
 .productItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #ffffff;
   padding: 30px;
-  //   margin: 0 20px;
   border-radius: 16px;
   position: relative;
+  height: 450px;
 }
 
 .productItem__img {
   width: 235px;
   height: 235px;
+  &:hover {
+    cursor: pointer;
+  }
 }
-
-.productItem__info {
+.productItem__infoName:hover {
+  background-color: yellow;
 }
-
 .productItem__infoName {
   font-size: var(--font-size20);
+}
+
+.productItem__rate {
+  text-align: center;
 }
 
 .productItem__infoStar {
@@ -67,6 +77,19 @@
   text-decoration: line-through;
   padding: 0 10px;
 }
+
+.productItem__option {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 30px;
+  margin-right: 30px;
+}
+
+.productItem__optionItem {
+  height: 30px;
+  width: 30px;
+}
 .productItem__infoSale {
   position: absolute;
   top: 10%;
@@ -81,7 +104,6 @@
 .product__SpecialOffer {
   display: flex;
   justify-content: space-around;
-  height: 528px;
   background-color: #522876;
   border-radius: 10px;
   color: var(--text-color-white);
@@ -112,6 +134,7 @@
 .product__newProductInfoTime {
   display: flex;
   margin: 50px 0;
+  width: 100%;
 }
 
 .product__newProductInfoTimeItem {
@@ -121,7 +144,7 @@
   font-size: var(--font-size24);
   width: 100px;
   height: 100px;
-  margin: 0 20px;
+
   background-color: #643e84;
   border-radius: 16px;
 }
@@ -175,4 +198,63 @@
 .product__newItemSub {
   margin: 20px 0;
   width: 22%;
+}
+
+/* Tablet - PC with low resolution */
+@media (min-width: 740px) and (max-width: 1023px) {
+  .product__topRate {
+    flex-wrap: wrap;
+  }
+  .product__topRateItem {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .productItem {
+    padding: 30px 20px;
+    margin-bottom: 40px;
+  }
+  .product__SpecialOffer {
+    flex-direction: column-reverse;
+  }
+  .product__newItemSub {
+    margin: 0;
+    width: 48%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+  .product__topRate {
+    flex-wrap: wrap;
+  }
+  .product__topRateItem {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .productItem {
+    margin-bottom: 40px;
+  }
+  .product__SpecialOffer {
+    flex-direction: column-reverse;
+  }
+  .product__newItemSub {
+    margin: 0;
+    width: 100%;
+  }
+  .product__topRateTitle {
+    font-size: var(--font-size32);
+  }
+
+  .product__topRateDesc {
+    font-size: var(--font-size14);
+    color: #5c5a92;
+    margin-bottom: 30px;
+  }
+  .product__newProductInfoTime {
+    flex-direction: column;
+  }
+  .product__newProductInfoTimeItem {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }

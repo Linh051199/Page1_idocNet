@@ -90,3 +90,42 @@
     background-color: blue;
   }
 }
+
+/* Tablet - PC with low resolution */
+@media (min-width: 740px) and (max-width: 1023px) {
+  .contact__titleDecs {
+    font-size: var(--font-size14);
+  }
+  .contact__titleHighlight {
+    font-size: var(--font-size32);
+  }
+  .contact__titleChecked {
+    display: flex;
+    flex-direction: column;
+    font-size: var(--font-size16);
+  }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+  .contact {
+    flex-direction: column;
+  }
+  .contact__titleDecs {
+    font-size: var(--font-size12);
+    margin-top: 20px;
+  }
+  .contact__titleHighlight {
+    font-size: var(--font-size28);
+    margin-bottom: 30px;
+  }
+  .contact__titleChecked {
+    display: flex;
+    flex-direction: column;
+    font-size: var(--font-size14);
+  }
+  .contact__form {
+    width: 100%;
+    margin-top: 50px;
+  }
+}

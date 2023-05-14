@@ -43,3 +43,40 @@
   font-size: var(--font-size18);
   color: #4c4d52;
 }
+/* Tablet - PC with low resolution */
+@media (min-width: 740px) and (max-width: 1023px) {
+  .about__itemHeader {
+    font-size: var(--font-size20);
+  }
+
+  .about__itemBody {
+    font-size: var(--font-size14);
+  }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+  .about {
+    flex-direction: column;
+  }
+  .about__itemHeader {
+    font-size: var(--font-size18);
+  }
+
+  .about__itemBody {
+    font-size: var(--font-size12);
+  }
+  .about__item1,
+  .about__item2,
+  .about__item3 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .about__itemHeader {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .about__itemHeaderHighlight {
+    margin-top: 50px;
+  }
+}

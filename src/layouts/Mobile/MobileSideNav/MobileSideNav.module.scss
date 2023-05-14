@@ -116,6 +116,11 @@
   border: 1px solid #dedede;
 }
 
-.mobile__inStock,
-.mobile__outOfStock {
+/* PC with low resolution */
+@media (max-width: 1023px) {
+  .mobile__screenList {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
 }

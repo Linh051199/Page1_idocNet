@@ -1,11 +1,10 @@
 .wrapper {
   display: flex;
-  height: 600px;
   width: 100%;
 }
 
 .add__left {
-  flex: 1;
+  width: 50%;
   margin-right: 15px;
   background-color: #282828;
   border-radius: 16px;
@@ -56,7 +55,7 @@
 }
 
 .add__right {
-  flex: 1;
+  width: 50%;
   margin-left: 15px;
   background-color: #f2f2f0;
   border-radius: 16px;
@@ -68,9 +67,26 @@
   align-content: center;
   padding-left: 8%;
   padding-right: 8%;
+  margin-bottom: 100px;
 }
 .add__rightInfo {
   color: var(--text-color-black);
   text-align: left;
   padding-top: 100px;
+}
+
+/* Tablet - mobile */
+@media (max-width: 1023px) {
+  .wrapper {
+    flex-wrap: wrap;
+  }
+  .add__right,
+  .add__left {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .add__left {
+    margin-bottom: 20px;
+  }
 }

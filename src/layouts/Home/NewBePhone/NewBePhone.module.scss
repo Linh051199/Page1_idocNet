@@ -28,7 +28,6 @@
   flex: 1;
 
   padding: 20px;
-  height: 290px;
   background-color: #f7f7f7;
   border-radius: 16px;
   margin-bottom: 100px;
@@ -57,4 +56,62 @@
   width: 241px;
   height: 231px;
   border-radius: 16px;
+}
+
+/* Tablet - PC with low resolution */
+@media (min-width: 740px) and (max-width: 1023px) {
+  .newBePhone__item1,
+  .newBePhone__item2 {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+  .newBePhone__itemTitle {
+    text-align: center;
+  }
+  .newBePhone__itemTitleHeader {
+    font-size: var(--font-size28);
+  }
+
+  .newBePhone__itemTitleBody,
+  .newBePhone__itemTitleShow {
+    font-size: var(--font-size16);
+    margin: 10px 0;
+  }
+}
+/* Mobile */
+@media (max-width: 739px) {
+  .question {
+    font-size: var(--font-size16);
+  }
+
+  .header {
+    font-size: var(--font-size32);
+  }
+  .newBePhone {
+    flex-direction: column;
+  }
+  .newBePhone__item1,
+  .newBePhone__item2 {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .newBePhone__itemTitle {
+    text-align: center;
+  }
+  .newBePhone__itemTitleHeader {
+    font-size: var(--font-size28);
+  }
+
+  .newBePhone__itemTitleBody,
+  .newBePhone__itemTitleShow {
+    font-size: var(--font-size16);
+    margin: 10px 0;
+  }
+  .newBePhone__itemImg {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+  }
 }

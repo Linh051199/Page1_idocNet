@@ -1,0 +1,33 @@
+.wrapper {
+  height: 45px;
+  background-color: #ffb300;
+}
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+}
+
+.title__desc {
+  font-size: var(--font-size16);
+}
+
+.title__closeBtn {
+  position: absolute;
+  right: 0;
+  z-index: 98;
+  font-size: var(--font-size24);
+  margin-right: 20px;
+  &:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+}
+/* Mobile */
+@media (max-width: 739px) {
+  .title__desc {
+    font-size: var(--font-size12);
+  }
+}

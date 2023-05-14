@@ -46,45 +46,6 @@ function Slider() {
         </div>
       </div>
     </div>
-    // <Carousel slide={false}>
-    //   <Carousel.Item>
-    //     <img
-    //       className="d-block w-100"
-    //       src="https://media.istockphoto.com/id/1067347086/photo/cat-with-blue-eyes-looks-at-camera.jpg?s=612x612&w=0&k=20&c=UP1yQs6o0eidm4L2F74DDm02pyeH40MwBwwGRAKhb4E="
-    //       alt="First slide"
-    //     />
-    //     <Carousel.Caption>
-    //       <h3>First slide label</h3>
-    //       <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-    //     </Carousel.Caption>
-    //   </Carousel.Item>
-    //   <Carousel.Item>
-    //     <img
-    //       className="d-block w-100"
-    //       src="https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_1280.jpg"
-    //       alt="Second slide"
-    //     />
-
-    //     <Carousel.Caption>
-    //       <h3>Second slide label</h3>
-    //       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    //     </Carousel.Caption>
-    //   </Carousel.Item>
-    //   <Carousel.Item>
-    //     <img
-    //       className="d-block w-100"
-    //       src="https://cdn.pixabay.com/photo/2015/11/16/14/43/cat-1045782_640.jpg"
-    //       alt="Third slide"
-    //     />
-
-    //     <Carousel.Caption>
-    //       <h3>Third slide label</h3>
-    //       <p>
-    //         Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-    //       </p>
-    //     </Carousel.Caption>
-    //   </Carousel.Item>
-    // </Carousel>
   );
 }
 

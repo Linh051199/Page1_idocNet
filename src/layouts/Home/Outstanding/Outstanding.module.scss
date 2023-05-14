@@ -1,7 +1,6 @@
 .wrapper {
   display: flex;
   justify-content: center;
-  height: 300px;
 }
 
 .outstanding__item {
@@ -26,4 +25,14 @@
 .outstanding__itemdesc {
   font-size: var(--font-size16);
   color: #9ba1b4;
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+  .wrapper {
+    flex-wrap: wrap;
+  }
+  .outstanding__item {
+    margin: 30px;
+  }
 }
