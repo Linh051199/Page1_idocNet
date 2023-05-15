@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/page1_idocNet/static/css/main.99824bdf.css",
-    "main.js": "/page1_idocNet/static/js/main.0fde437d.js",
+    "main.css": "/page1_idocNet/static/css/main.cab42c47.css",
+    "main.js": "/page1_idocNet/static/js/main.c2e2c373.js",
     "static/js/787.e19c923b.chunk.js": "/page1_idocNet/static/js/787.e19c923b.chunk.js",
     "static/media/addImg2.webp": "/page1_idocNet/static/media/addImg2.88bbc12b2879d7d2e05e.webp",
     "static/media/addImg1.webp": "/page1_idocNet/static/media/addImg1.fe419fd6e857310f3de7.webp",
@@ -15,10 +15,12 @@
     "static/media/outstandingDaily.svg": "/page1_idocNet/static/media/outstandingDaily.031a9ea342d98ccbf4d5e4463f872188.svg",
     "static/media/shoppingIcon4.svg": "/page1_idocNet/static/media/shoppingIcon4.e79f4bb798d670284b4c5d7fcae3f67f.svg",
     "static/media/outstandingFreeShip.svg": "/page1_idocNet/static/media/outstandingFreeShip.b4738534f16fdce8875281acab2807df.svg",
+    "static/media/Slider1Icon3.svg": "/page1_idocNet/static/media/Slider1Icon3.3b08ffa3064ad8452434ca3dd16f1d3e.svg",
     "static/media/shoppingIcon5.svg": "/page1_idocNet/static/media/shoppingIcon5.75a1e2c085226a1b358acdeef2455635.svg",
     "static/media/footerIcon3.svg": "/page1_idocNet/static/media/footerIcon3.dc0aa1cbee0baf3113f6b515e9653de0.svg",
     "static/media/footerIcon6.svg": "/page1_idocNet/static/media/footerIcon6.c9fd1245b2aa462793b177e490324829.svg",
     "static/media/outstandingSecure.svg": "/page1_idocNet/static/media/outstandingSecure.b30f9a7fefb25081454b57348b471aa3.svg",
+    "static/media/Slider1Icon1.svg": "/page1_idocNet/static/media/Slider1Icon1.70564f318273a517f3157607f7aab4d9.svg",
     "static/media/outstandingGift.svg": "/page1_idocNet/static/media/outstandingGift.06f48987dd857e6822bb9b369fd0d4bb.svg",
     "static/media/footerIcon1.svg": "/page1_idocNet/static/media/footerIcon1.ce2f6ecd2670ba5f8a7f7224838e3391.svg",
     "static/media/outstandingFreeReturns.svg": "/page1_idocNet/static/media/outstandingFreeReturns.0384dba6ba5bbbecadce62520fdd710c.svg",
@@ -27,7 +29,7 @@
     "static/media/footerIcon4.svg": "/page1_idocNet/static/media/footerIcon4.8866f2a0fd21d76f20711dae4b96a1d2.svg",
     "static/media/footerIcon2.svg": "/page1_idocNet/static/media/footerIcon2.2c2b27fa8d49146a23dfb9831c92d42d.svg",
     "index.html": "/page1_idocNet/index.html",
-    "static/media/table1.svg": "/page1_idocNet/static/media/table1.81ed52ea087b3c5ae8a6909cfdd74cab.svg",
+    "static/media/Slider1Icon2.svg": "/page1_idocNet/static/media/Slider1Icon2.7c20b9310f516d7826cae96a18ac14b6.svg",
     "static/media/footerIcon5.svg": "/page1_idocNet/static/media/footerIcon5.f115296c8a8cda23351688a905192fa3.svg",
     "static/media/GamingHidden.svg": "/page1_idocNet/static/media/GamingHidden.39e536dd1fe03704ee21dd2c6a2246b5.svg",
     "static/media/WatchesHidden.svg": "/page1_idocNet/static/media/WatchesHidden.83cc4940e02f59cb965ef3eb6d7c9b11.svg",
@@ -45,12 +47,12 @@
     "static/media/menuIconLaptop.svg": "/page1_idocNet/static/media/menuIconLaptop.a606e42c490e4b10ebc9884c2030f52a.svg",
     "static/media/menuIconSmartphone.svg": "/page1_idocNet/static/media/menuIconSmartphone.b36e71b06a506f630c6ee44fe7dd7102.svg",
     "static/media/menuIconTablet.svg": "/page1_idocNet/static/media/menuIconTablet.4540a1384bf9a07757b7f15a0ec1161c.svg",
-    "main.99824bdf.css.map": "/page1_idocNet/static/css/main.99824bdf.css.map",
-    "main.0fde437d.js.map": "/page1_idocNet/static/js/main.0fde437d.js.map",
+    "main.cab42c47.css.map": "/page1_idocNet/static/css/main.cab42c47.css.map",
+    "main.c2e2c373.js.map": "/page1_idocNet/static/js/main.c2e2c373.js.map",
     "787.e19c923b.chunk.js.map": "/page1_idocNet/static/js/787.e19c923b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.99824bdf.css",
-    "static/js/main.0fde437d.js"
+    "static/css/main.cab42c47.css",
+    "static/js/main.c2e2c373.js"
   ]
 }
