@@ -13,6 +13,7 @@ function Header2() {
   const [showMenuTV, setShowMenuTV] = useState(false);
   const [showMenuTablet, setShowMenuTablet] = useState(false);
   const [showMenuGaming, setShowMenuGaming] = useState(false);
+  const [showOverlay, setShowOverlay] = useState(false);
 
   const dataComputer = {
     data: ["PC's", "Laptops", "Notebooks", "PC Accessories"],
@@ -73,6 +74,7 @@ function Header2() {
   };
 
   const handldeMouseOverComouter = (e) => {
+    setShowOverlay(true);
     setShowMenuComputer(true);
     setShowMenuSmartPhones(false);
     setShowMenuWatches(false);
@@ -81,6 +83,8 @@ function Header2() {
     setShowMenuGaming(false);
   };
   const handldeMouseOverSmartPhones = (e) => {
+    setShowOverlay(true);
+
     setShowMenuComputer(false);
     setShowMenuSmartPhones(true);
     setShowMenuWatches(false);
@@ -89,6 +93,8 @@ function Header2() {
     setShowMenuGaming(false);
   };
   const handldeMouseOverWatches = (e) => {
+    setShowOverlay(true);
+
     setShowMenuComputer(false);
     setShowMenuSmartPhones(false);
     setShowMenuWatches(true);
@@ -97,6 +103,8 @@ function Header2() {
     setShowMenuGaming(false);
   };
   const handldeMouseOverTV = (e) => {
+    setShowOverlay(true);
+
     setShowMenuComputer(false);
     setShowMenuSmartPhones(false);
     setShowMenuWatches(false);
@@ -105,6 +113,8 @@ function Header2() {
     setShowMenuGaming(false);
   };
   const handldeMouseOverTablets = (e) => {
+    setShowOverlay(true);
+
     setShowMenuComputer(false);
     setShowMenuSmartPhones(false);
     setShowMenuWatches(false);
@@ -113,6 +123,8 @@ function Header2() {
     setShowMenuGaming(false);
   };
   const handldeMouseOverGaming = (e) => {
+    setShowOverlay(true);
+
     setShowMenuComputer(false);
     setShowMenuSmartPhones(false);
     setShowMenuWatches(false);
@@ -122,6 +134,7 @@ function Header2() {
   };
 
   const handlOnMouseLeaveHeader2Bottom = () => {
+    setShowOverlay(false);
     setShowMenuComputer(false);
     setShowMenuSmartPhones(false);
     setShowMenuWatches(false);
@@ -132,12 +145,14 @@ function Header2() {
 
   return (
     <div className={cx("header__2")}>
+      {showOverlay && <div className={cx("overlay")}></div>}
+
       <div className={cx("header__2-des", "grid", "wide")}>
         <div className={cx("header__2-title")}>
           <div className={cx("mediaNav")}>
             <label htmlFor="navMedia" className={cx("mediaNavIcon")}>
               <i
-                class="fa-solid fa-bars"
+                className="fa-solid fa-bars"
                 style={{ fontSize: "30px", padding: "10px", color: "#4e56c9" }}
               ></i>
             </label>
@@ -150,7 +165,10 @@ function Header2() {
 
           <div className={cx("header__2-title-search")}>
             <span className={cx("header__2-title-searchIcon")}>
-              <i class="fa-solid fa-magnifying-glass"></i>
+              <i
+                className="fa-solid fa-magnifying-glass"
+                style={{ color: "#2f38bf" }}
+              ></i>
             </span>
             <input
               className={cx("header__2-title-searchInput")}
@@ -209,7 +227,7 @@ function Header2() {
                   <img src={images.menuIconLaptop} alt="img" />
                 </div>
                 <div className={cx("header__2-menuItemName")}> Computers </div>
-                <i class="fa-solid fa-chevron-down"></i>
+                <i className="fa-solid fa-chevron-down"></i>
               </div>
               <div
                 onMouseOver={handldeMouseOverSmartPhones}
@@ -222,7 +240,7 @@ function Header2() {
                   {" "}
                   SmartPhones{" "}
                 </div>
-                <i class="fa-solid fa-chevron-down"></i>
+                <i className="fa-solid fa-chevron-down"></i>
               </div>
               <div
                 onMouseOver={handldeMouseOverWatches}
@@ -232,7 +250,7 @@ function Header2() {
                   <img src={images.menuIconWatches} alt="img" />
                 </div>
                 <div className={cx("header__2-menuItemName")}> Watches </div>
-                <i class="fa-solid fa-chevron-down"></i>
+                <i className="fa-solid fa-chevron-down"></i>
               </div>
               <div
                 onMouseOver={handldeMouseOverTV}
@@ -242,7 +260,7 @@ function Header2() {
                   <img src={images.menuIconTV} alt="img" />
                 </div>
                 <div className={cx("header__2-menuItemName")}> TV/Audio </div>
-                <i class="fa-solid fa-chevron-down"></i>
+                <i className="fa-solid fa-chevron-down"></i>
               </div>
               <div
                 onMouseOver={handldeMouseOverTablets}
@@ -252,7 +270,7 @@ function Header2() {
                   <img src={images.menuIconTablet} alt="img" />
                 </div>
                 <div className={cx("header__2-menuItemName")}> Tablets </div>
-                <i class="fa-solid fa-chevron-down"></i>
+                <i className="fa-solid fa-chevron-down"></i>
               </div>
               <div
                 onMouseOver={handldeMouseOverGaming}
@@ -262,7 +280,7 @@ function Header2() {
                   <img src={images.menuIconGaming} alt="img" />
                 </div>
                 <div className={cx("header__2-menuItemName")}> Gaming </div>
-                <i class="fa-solid fa-chevron-down"></i>
+                <i className="fa-solid fa-chevron-down"></i>
               </div>
               <div
                 onMouseOver={handlOnMouseLeaveHeader2Bottom}
@@ -353,7 +371,7 @@ function Header2() {
       />
       <div className={cx("navMedia")}>
         <label htmlFor="navMedia" className={cx("navMediaBtnClose")}>
-          <i class="fa-solid fa-xmark"></i>
+          <i className="fa-solid fa-xmark"></i>
         </label>
         <div className={cx("navMediaList")}>
           <div className={cx("navMediaItem")}>

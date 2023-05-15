@@ -30,7 +30,7 @@ function Title() {
           <div className={cx("title")}>
             <div className={cx("title__desc")}>{data[currentState].text}</div>
             <div className={cx("title__closeBtn")} onClick={handleShowTitle}>
-              <i class="fa-solid fa-xmark"></i>
+              <i className="fa-solid fa-xmark"></i>
             </div>
           </div>
         </div>

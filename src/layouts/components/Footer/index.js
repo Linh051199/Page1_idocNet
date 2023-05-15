@@ -38,13 +38,13 @@ function Footer() {
             </div>
             <div className={cx("footer__contactIcon")}>
               <div className={cx("footer__contactIconItem")}>
-                <i class="fa-brands fa-facebook-f"></i>
+                <i className="fa-brands fa-facebook-f"></i>
               </div>
               <div className={cx("footer__contactIconItem")}>
-                <i class="fa-brands fa-instagram"></i>
+                <i className="fa-brands fa-instagram"></i>
               </div>
               <div className={cx("footer__contactIconItem")}>
-                <i class="fa-brands fa-pinterest-p"></i>
+                <i className="fa-brands fa-pinterest-p"></i>
               </div>
             </div>
           </div>

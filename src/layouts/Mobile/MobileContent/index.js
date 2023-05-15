@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import classNames from "classnames/bind";
 
 import styles from "./MobileContent.module.scss";
-import images from "../../../assets/images";
-import ProductItem from "../../Home/Products/ProductItem";
+// import images from "../../../assets/images";
+// import ProductItem from "../../Home/Products/ProductItem";
 
 const cx = classNames.bind(styles);
 
@@ -90,42 +90,13 @@ function MobileContent() {
               36
             </div>
           </div>
-          <div>
-            <select className={cx("title__select")} type="">
-              <option>
-                Default sorting
-                <i class="fa-solid fa-chevron-down"></i>
-              </option>
-              <option>Sort by popularity</option>
-              <option>Sort by rating</option>
-              <option>Sort by latest</option>
-              <option>Sort by price: low to high</option>
-              <option>Sort by price: high to low</option>
-            </select>
+          <div className={cx("title__menu")}>
+            Default sorting
+            <i className="fa-solid fa-chevron-down"></i>
           </div>
         </div>
       </div>
-      <div className={cx("content")}>
-        <div className={cx("content__list")}>
-          <div className={cx("content__item")}>
-            <ProductItem
-              src="https://themes.muffingroup.com/betheme-store2/wp-content/uploads/2022/08/bethemestore2-products-pic4.webp"
-              price="$$210.00 – $250.00"
-              name="BeSmartphone1"
-              star="5"
-            />
-          </div>
-          <div className={cx("content__item")}>
-            <ProductItem
-              src="https://themes.muffingroup.com/betheme-store2/wp-content/uploads/2022/08/bethemestore2-products-pic16.webp"
-              price="$220.00 – $320.00"
-              name="BeSmartphone2"
-              star="4"
-              sale
-            />
-          </div>
-        </div>
-      </div>
+      <div className={cx("content")}></div>
     </div>
   );
 }

@@ -22,13 +22,15 @@ function MenuItem({
     setShowMenuTablet(false);
     setShowMenuGaming(false);
   };
-  console.log(data.data);
   const dataMenuItem = data.data;
   const renderData = () => {
     const arr = [];
     for (let i = 0; i < dataMenuItem.length; i++) {
       arr.push(
-        <li className={cx("menuItem__listItemSub")}>{dataMenuItem[i]}</li>
+        <li className={cx("menuItem__listItemSub")}>
+          {dataMenuItem[i]}
+          <span className={cx("crossBar")}></span>
+        </li>
       );
     }
     return arr;
@@ -39,7 +41,7 @@ function MenuItem({
         <ul className={cx("menuItem__listItem")}>{renderData()}</ul>
       </div>
       <div className={cx("menuItem__imgHidden")}>
-        <img src={data.imgHidden} alt="img" width="220px" height="220px" />
+        <img src={data.imgHidden} alt="img" width="300px" height="220px" />
       </div>
       <div className={cx("menuItem__info")}>
         <div className={cx("menuItem__infoTitle")}>

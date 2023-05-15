@@ -21,7 +21,7 @@ function Contact() {
           <div className={cx("contact__titleChecked")}>
             <div className={cx("contact__titleCheckedItem")}>
               <i
-                class="fa-solid fa-check"
+                className="fa-solid fa-check"
                 style={{
                   backgroundColor: "blue",
                   borderRadius: "3px",
@@ -32,7 +32,7 @@ function Contact() {
             </div>
             <div className={cx("contact__titleCheckedItem")}>
               <i
-                class="fa-solid fa-check"
+                className="fa-solid fa-check"
                 style={{
                   backgroundColor: "blue",
                   borderRadius: "3px",

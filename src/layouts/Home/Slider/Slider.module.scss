@@ -5,7 +5,7 @@
 .slider__bgImg {
   height: 100%;
   border-radius: 10px;
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 .carousel-boullt {
@@ -13,9 +13,9 @@
   justify-content: center;
   align-items: center;
   width: 300px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   position: absolute;
-  z-index: 98;
+  z-index: 96;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -28,6 +28,104 @@
   margin: 10px;
   cursor: pointer;
   box-shadow: 3px 2px 2px rgba(73, 72, 72, 0.338);
+}
+
+.slider1 {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.slider1__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text-color-white);
+  animation: animationSlider1Title 0.5s linear;
+}
+
+.slider1__titleNew {
+  font-size: var(--font-size14);
+  width: 60px;
+  padding: 8px 12px;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  margin-bottom: 50px;
+}
+
+.slider1__titleName {
+  font-size: var(--font-size42);
+  font-weight: var(--font-weight-bold);
+}
+
+.slider1__titleDesc {
+  font-size: var(--font-size20);
+  font-weight: var(--font-weight-medium);
+  margin: 40px 0;
+}
+.slider1__titleBtn {
+  font-size: var(--font-size16);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-color-white);
+  width: 150px;
+  height: 48px;
+  border-radius: 8px;
+  background-color: #2a27e9;
+}
+
+.slider1__img {
+  transform: translateY(5%);
+  animation: animationSlider1ImgShow 0.5s linear,
+    animationSlider1Img 2s alternate infinite;
+}
+@keyframes animationSlider1Title {
+  0% {
+    transform: translateX(-20%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes animationSlider1Img {
+  0% {
+    transform: translateY(-6%);
+  }
+
+  100% {
+    transform: translateY(-3%);
+  }
+}
+@keyframes animationSlider1ImgShow {
+  0% {
+    width: 500px;
+    height: 500px;
+    opacity: 0;
+  }
+
+  100% {
+    width: 560px;
+    height: 580px;
+    opacity: 1;
+  }
+}
+.slider1__desc {
+}
+
+.slider1__decsItem {
+  text-align: left;
+  padding: 15px 0;
+}
+
+.slider1__descItemInfo {
+  font-size: var(--font-size14);
+  color: var(--text-color-white);
+  margin-top: 10px;
 }
 
 @media (min-width: 740px) and (max-width: 1023px) {

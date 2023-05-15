@@ -37,7 +37,9 @@ const images = {
   shopoingOption1: require("./shoppingOption1.svg").default,
   shopoingOption2: require("./shoppingOption2.svg").default,
   shopoingOption3: require("./shoppingOption3.svg").default,
-  table1: require("./table1.svg").default,
+  Slider1Icon1: require("./Slider1Icon1.svg").default,
+  Slider1Icon2: require("./Slider1Icon2.svg").default,
+  Slider1Icon3: require("./Slider1Icon3.svg").default,
 };
 
 export default images;

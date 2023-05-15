@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import classNames from "classnames/bind";
 
 import styles from "./Header.module.scss";
@@ -6,24 +6,37 @@ import styles from "./Header.module.scss";
 const cx = classNames.bind(styles);
 
 function Header1() {
+  const [showOverlay, setShowOverlay] = useState(false);
+
+  const handleOnMouseOver = () => {
+    setShowOverlay(true);
+  };
+  const handleOnMouseLeave = () => {
+    setShowOverlay(false);
+  };
   return (
     <div className={cx("header__1")}>
+      {showOverlay && <div className={cx("overlay")}></div>}
       <div className={cx("header__1-des", "grid", "wide")}>
         <div className={cx("header__1-label")}>
           We ship packages within 24 hours of ordering
         </div>
         <ul className={cx("header__1-nav", "clearFix")}>
-          <li className={cx("header__1-navItem")}>
+          <li
+            className={cx("header__1-navItem")}
+            onMouseOver={handleOnMouseOver}
+            onMouseLeave={handleOnMouseLeave}
+          >
             <span className={cx("header__1-navItem-title")}>
               <div>
-                Features <i class="fa-solid fa-chevron-down"></i>
+                Features <i className="fa-solid fa-chevron-down"></i>
               </div>
             </span>
 
             <ul className={cx("header__1-nav-Item")}>
               <li>
                 <span className={cx("nav-Item-Title")}>
-                  Shop Layouts <i class="fa-solid fa-chevron-right"></i>
+                  Shop Layouts <i className="fa-solid fa-chevron-right"></i>
                 </span>
                 <ul className={cx("nav2")}>
                   <li className={cx("nav2-item")}>Grid 3 Columns</li>
@@ -34,7 +47,8 @@ function Header1() {
               </li>
               <li>
                 <span className={cx("nav-Item-Title")}>
-                  Single Product Style <i class="fa-solid fa-chevron-right"></i>
+                  Single Product Style{" "}
+                  <i className="fa-solid fa-chevron-right"></i>
                 </span>
                 <ul className={cx("nav2")}>
                   <li className={cx("nav2-item")}>Default</li>
@@ -48,7 +62,7 @@ function Header1() {
               <li>
                 <span className={cx("nav-Item-Title")}>
                   Product gallery styles{" "}
-                  <i class="fa-solid fa-chevron-right"></i>
+                  <i className="fa-solid fa-chevron-right"></i>
                 </span>
                 <ul className={cx("nav2")}>
                   <li className={cx("nav2-item")}>Thumbnails: Bottom Left</li>
@@ -63,7 +77,7 @@ function Header1() {
               </li>
               <li>
                 <span className={cx("nav-Item-Title")}>
-                  Overlay styles <i class="fa-solid fa-chevron-right"></i>
+                  Overlay styles <i className="fa-solid fa-chevron-right"></i>
                 </span>
                 <ul className={cx("nav2")}>
                   <li className={cx("nav2-item")}>Overlay: Bottom Left</li>

@@ -42,13 +42,16 @@ function ProductItem({ src, name, sale, price, priceHidden, star }) {
 
         <div className={cx("productItem__option")}>
           <div className={cx("productItem__optionItem")}>
-            <i class="fa-solid fa-link" style={{ fontSize: "16px" }}></i>
+            <i className="fa-solid fa-link" style={{ fontSize: "16px" }}></i>
           </div>
           <div className={cx("productItem__optionItem")}>
-            <i class="fa-regular fa-heart" style={{ fontSize: "16px" }}></i>
+            <i className="fa-regular fa-heart" style={{ fontSize: "16px" }}></i>
           </div>
           <div className={cx("productItem__optionItem")}>
-            <i class="fa-solid fa-maximize" style={{ fontSize: "16px" }}></i>
+            <i
+              className="fa-solid fa-maximize"
+              style={{ fontSize: "16px" }}
+            ></i>
           </div>
         </div>
 
