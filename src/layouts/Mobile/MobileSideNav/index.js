@@ -11,6 +11,20 @@ function MobileSideNav() {
   return (
     <div className={cx("wrapper")}>
       <div className={cx("mobile__title")}>5G Phones</div>
+      <div className={cx("mobile__price")}>
+        <div className={cx("mobile__priceTitle")}>Price</div>
+        <div className={cx("mobile__priceBody")}>
+          <div className={cx("mobile__priceMin")}>$60.00</div>
+          <input
+            className={cx("mobile__priceInput")}
+            type="range"
+            min="60"
+            max="6300"
+            step="1"
+          />
+          <div className={cx("mobile__priceMax")}>$6,300.00</div>
+        </div>
+      </div>
       <div className={cx("mobile__brand")}>
         Brand
         <div className={cx("mobile__brandList")}>

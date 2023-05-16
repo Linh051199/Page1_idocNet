@@ -5,6 +5,7 @@ import styles from "./Slider.module.scss";
 import imageSlider from "./dataSlider";
 import Slider1 from "./Slider1";
 import Slider2 from "./Slider2";
+import Slider3 from "./Slider3";
 
 const cx = classNames.bind(styles);
 
@@ -18,13 +19,13 @@ function Slider() {
       } else {
         setCurrentState(currentState + 1);
       }
-    }, 2000);
+    }, 4000);
     return () => clearTimeout(timer);
   }, [currentState]);
 
   const bgImage = {
     backgroundImage: `url(${imageSlider[currentState].url})`,
-    backgroundImageSize: "cover",
+    backgroundSize: "cover",
     backgroundPosition: "center",
     heigh: "100%",
   };
@@ -37,6 +38,7 @@ function Slider() {
       <div className={cx("slider__bgImg")} style={bgImage}>
         {currentState === 0 && <Slider1 />}
         {currentState === 1 && <Slider2 />}
+        {currentState === 2 && <Slider3 />}
       </div>
       <div className={cx("slider__desc")}>
         <div className={cx("carousel-boullt")}>

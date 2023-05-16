@@ -40,6 +40,8 @@ const images = {
   Slider1Icon1: require("./Slider1Icon1.svg").default,
   Slider1Icon2: require("./Slider1Icon2.svg").default,
   Slider1Icon3: require("./Slider1Icon3.svg").default,
+  Slider2JBE: require("./Slider2JBE.svg").default,
+  SideBarBuyIcon: require("./SideBarBuyIcon.svg").default,
 };
 
 export default images;

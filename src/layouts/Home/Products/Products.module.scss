@@ -43,7 +43,9 @@
   position: relative;
   height: 450px;
 }
-
+.productItem__image {
+  flex: 1;
+}
 .productItem__img {
   width: 235px;
   height: 235px;
@@ -51,11 +53,10 @@
     cursor: pointer;
   }
 }
-.productItem__infoName:hover {
-  background-color: yellow;
-}
+
 .productItem__infoName {
   font-size: var(--font-size20);
+  cursor: pointer;
 }
 
 .productItem__rate {
@@ -63,7 +64,7 @@
 }
 
 .productItem__infoStar {
-  color: blue;
+  color: #2a27e9;
   font-size: var(--font-size14);
 }
 
@@ -71,6 +72,7 @@
   display: flex;
   justify-content: center;
   font-size: var(--font-size16);
+  color: #2a27e9;
 }
 
 .productItem__infoPriceHidden {
@@ -84,11 +86,27 @@
   right: 0;
   margin-top: 30px;
   margin-right: 30px;
+  animation: showOptions 0.1s linear;
 }
 
 .productItem__optionItem {
   height: 30px;
   width: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  padding-top: 5px;
+  cursor: pointer;
+}
+@keyframes showOptions {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 .productItem__infoSale {
   position: absolute;
@@ -107,6 +125,7 @@
   background-color: #522876;
   border-radius: 10px;
   color: var(--text-color-white);
+  height: 525px;
 }
 .product__SpecialOfferImg {
   height: 100%;
@@ -144,16 +163,13 @@
   font-size: var(--font-size24);
   width: 100px;
   height: 100px;
-
+  margin-right: 20px;
   background-color: #643e84;
   border-radius: 16px;
 }
 
 .product__newProductInfoTimeItemDesc {
   font-size: var(--font-size16);
-}
-
-.product__newProductInfoTimeItemNumber {
 }
 
 .product__newProductInfoName {
@@ -215,10 +231,21 @@
   }
   .product__SpecialOffer {
     flex-direction: column-reverse;
+    height: 100%;
   }
   .product__newItemSub {
     margin: 0;
     width: 48%;
+  }
+  .product__newProductInfoTime {
+    // flex-direction: column;
+  }
+  .product__newProductInfoTimeItem {
+    width: 100%;
+    margin-bottom: 20px;
+    &:first-child {
+      margin-left: 20px;
+    }
   }
 }
 
@@ -236,10 +263,14 @@
   }
   .product__SpecialOffer {
     flex-direction: column-reverse;
+    height: 100%;
+  }
+  .product__newItem {
+    justify-content: center;
   }
   .product__newItemSub {
     margin: 0;
-    width: 100%;
+    width: 90%;
   }
   .product__topRateTitle {
     font-size: var(--font-size32);
@@ -253,6 +284,7 @@
   .product__newProductInfoTime {
     flex-direction: column;
   }
+
   .product__newProductInfoTimeItem {
     width: 100%;
     margin-bottom: 20px;

@@ -7,7 +7,7 @@
   color: #0b1a48;
   margin: 60px 0;
 }
-
+.mobile__priceTitle,
 .mobile__brand,
 .mobile__color,
 .mobile__hdd,
@@ -16,6 +16,36 @@
 .mobile__outOfStock {
   font-size: var(--font-size16);
   color: #4c4d52;
+}
+.mobile__price {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 110px;
+  align-items: flex-start;
+}
+
+.mobile__priceBody {
+  display: flex;
+  margin-top: 30px;
+}
+
+.mobile__priceMin,
+.mobile__priceMax {
+  font-size: var(--font-size16);
+  padding: 8px;
+  border: 1px solid #e7e7e7;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.mobile__priceMin {
+  margin-right: 10px;
+}
+.mobile__priceMax {
+  margin-left: 10px;
+}
+
+.mobile__priceInput {
 }
 
 .mobile__brand {
@@ -122,5 +152,8 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 10px;
+  }
+  .wrapper {
+    margin-left: 5px;
   }
 }

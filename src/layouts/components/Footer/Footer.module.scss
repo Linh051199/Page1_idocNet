@@ -152,9 +152,13 @@
   .footer__authorIcon {
     flex-wrap: wrap;
   }
+  .footer__contactAddr {
+    padding: 0 5px;
+  }
   .footer__authorIconItem {
     width: 25%;
   }
+
   .footer__contactList {
     text-align: center;
     margin: 20px 50px;
@@ -164,5 +168,11 @@
   }
   .footer__author {
     flex-direction: column;
+  }
+  .footer__author {
+    margin: 50px 0 100px 0;
+  }
+  .footer__authorTitle {
+    padding: 0 5px;
   }
 }

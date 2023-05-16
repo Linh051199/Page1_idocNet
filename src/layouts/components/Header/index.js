@@ -5,7 +5,7 @@ import styles from "./Header.module.scss";
 import Header1 from "./Header1";
 import Header2 from "./Header2";
 import Title from "./Title";
-
+import images from "../../../assets/images";
 const cx = classNames.bind(styles);
 
 function Header() {

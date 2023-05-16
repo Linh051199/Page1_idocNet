@@ -17,29 +17,41 @@ function Slider1() {
         </div>
         <button className={cx("slider1__titleBtn")}>By Now</button>
       </div>
-      <div>
+      <div className={cx("slider1__image")}>
         <img
           className={cx("slider1__img")}
           src="https://themes.muffingroup.com/betheme-store2/wp-content/uploads/2022/08/bethemestore2-slider-pic1.webp"
           alt="img"
-          width="560px"
-          height="580px"
+          // width="560px"
+          // height="580px"
         />
       </div>
       <div className={cx("slider1__desc")}>
         <div className={cx("slider1__decsItem")}>
-          <img src={images.Slider1Icon1} alt="img" />
+          <img
+            className={cx("slider1__decsItemImg")}
+            src={images.Slider1Icon1}
+            alt="img"
+          />
           <div className={cx("slider1__descItemInfo")}>32GB RAM</div>
         </div>
         <div className={cx("slider1__decsItem")}>
           <div className={cx("slider1__decsItem")}>
-            <img src={images.Slider1Icon2} alt="img" />
+            <img
+              className={cx("slider1__decsItemImg")}
+              src={images.Slider1Icon2}
+              alt="img"
+            />
             <div className={cx("slider1__descItemInfo")}>Retina AMOLED</div>
           </div>
         </div>
         <div className={cx("slider1__decsItem")}>
           <div className={cx("slider1__decsItem")}>
-            <img src={images.Slider1Icon3} alt="img" />
+            <img
+              className={cx("slider1__decsItemImg")}
+              src={images.Slider1Icon3}
+              alt="img"
+            />
             <div className={cx("slider1__descItemInfo")}>Pentium 9 DT</div>
           </div>
         </div>

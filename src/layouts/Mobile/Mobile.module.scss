@@ -17,14 +17,69 @@
   flex: 8;
   text-align: left;
 }
+.sideBarAd {
+  position: fixed;
+  z-index: 99;
+  right: 0;
+  top: 50%;
+  cursor: pointer;
+}
+
+.sideBarAdItem1,
+.sideBarAdItem2 {
+  font-size: var(--font-size12);
+  background-color: #06070c;
+  color: var(--text-color-white);
+  width: 65px;
+  height: 65px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  margin-bottom: 5px;
+  padding-top: 10px;
+}
+
+.sideBarItem1__desc {
+  animation: sideBarAdItem1 2s linear infinite;
+}
+.sideBarAdItem1Highlight {
+  font-size: var(--font-size20);
+}
+
+.sideBarAdItem2 {
+  background-color: #80b541;
+}
+.sideBarAdItem2Icon {
+  width: 26px;
+  height: 27px;
+}
+@keyframes sideBarAdItem1 {
+  0% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 0.75;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
 
 /* Tablet - PC with low resolution */
 @media (max-width: 1023px) {
   .content {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .mobile__sideNav,
   .mobile__content {
     flex: 1;
+  }
+}
+@media (max-width: 739px) {
+  .sideBarAd {
+    display: none;
   }
 }

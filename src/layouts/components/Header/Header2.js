@@ -204,6 +204,7 @@ function Header2() {
             </div>
             <div className={cx("header__2-title-contactItem")}>
               <div className={cx("header__2-title-ctIcon")}>
+                <div className={cx("header__2-title-ciIconNumber")}>0</div>
                 <img src={images.headerIconCart} alt="img" />
               </div>
               <div className={cx("header__2-title-ctInfo")}>
