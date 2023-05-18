@@ -94,7 +94,7 @@ function MobileContent() {
             <select className={cx("title__select")} type="">
               <option>
                 Default sorting
-                <i class="fa-solid fa-chevron-down"></i>
+                <i className="fa-solid fa-chevron-down"></i>
               </option>
               <option>Sort by popularity</option>
               <option>Sort by rating</option>

@@ -17,6 +17,7 @@ function Header2() {
 
   const dataComputer = {
     data: ["PC's", "Laptops", "Notebooks", "PC Accessories"],
+    key: 1,
     imgHidden: images.laptopHidden,
     title: "Computer",
     desc: "Customers choice",
@@ -30,6 +31,7 @@ function Header2() {
       "Prepaid phones",
       "Unlocked phones",
     ],
+    key: 2,
     imgHidden: images.SmartPhoneHidden,
     title: "Smartphones",
     desc: "Our choice",
@@ -39,6 +41,7 @@ function Header2() {
 
   const dataWatches = {
     data: ["Fitness trackers", "Smart watches", "Smartwatch accessories"],
+    key: 3,
     imgHidden: images.WatchesHidden,
     title: "Watches",
     desc: "Tech Awards",
@@ -48,6 +51,7 @@ function Header2() {
 
   const dataTV = {
     data: ["Earphones", "Headphones", "Smart TV", "TV Accessories"],
+    key: 4,
     imgHidden: images.TVHidden,
     title: "TV/Audio",
     desc: "Bestseller",
@@ -57,6 +61,7 @@ function Header2() {
 
   const dataTablet = {
     data: ["Ebook-Reader", "Kids Tablets", "Tablet accessories"],
+    key: 5,
     imgHidden: images.TabletHidden,
     title: "Tablets",
     desc: "Tech Awards",
@@ -66,6 +71,7 @@ function Header2() {
 
   const dataGaming = {
     data: ["Audio", "Gaming accesories", "Gaming devices", "Gaming displays"],
+    key: 6,
     imgHidden: images.GamingHidden,
     title: "Gaming",
     desc: "Top products",

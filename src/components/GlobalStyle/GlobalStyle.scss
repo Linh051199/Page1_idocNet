@@ -19,6 +19,7 @@
   --font-size58: 58px;
   --font-size90: 90px;
   --font-size96: 96px;
+  --font-size120: 120px;
   --font-size130: 130px;
 
   --font-weight-light: 300;
@@ -38,6 +39,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {

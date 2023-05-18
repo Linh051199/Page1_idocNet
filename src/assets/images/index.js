@@ -42,6 +42,7 @@ const images = {
   Slider1Icon3: require("./Slider1Icon3.svg").default,
   Slider2JBE: require("./Slider2JBE.svg").default,
   SideBarBuyIcon: require("./SideBarBuyIcon.svg").default,
+  buy: require("./buy.svg").default,
 };
 
 export default images;

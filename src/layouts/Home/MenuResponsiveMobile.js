@@ -9,27 +9,27 @@ function MenuResponsiveMobile() {
     <div className={cx("menu")}>
       <div className={cx("menuItem")}>
         <i
-          class="fa-solid fa-border-all"
+          className="fa-solid fa-border-all"
           style={{ width: "30px", height: "30px", fontSize: "22px" }}
         ></i>
       </div>
       <div className={cx("menuItem")}>
         <i
-          class="fa-regular fa-user"
-          style={{ width: "30px", height: "30px", fontSize: "22px" }}
-        ></i>
-      </div>
-      <div className={cx("menuItem")}>
-        <div className={cx("menuItemNumber")}>0</div>
-        <i
-          class="fa-solid fa-cart-shopping"
+          className="fa-regular fa-user"
           style={{ width: "30px", height: "30px", fontSize: "22px" }}
         ></i>
       </div>
       <div className={cx("menuItem")}>
         <div className={cx("menuItemNumber")}>0</div>
         <i
-          class="fa-regular fa-heart"
+          className="fa-solid fa-cart-shopping"
+          style={{ width: "30px", height: "30px", fontSize: "22px" }}
+        ></i>
+      </div>
+      <div className={cx("menuItem")}>
+        <div className={cx("menuItemNumber")}>0</div>
+        <i
+          className="fa-regular fa-heart"
           style={{ width: "30px", height: "30px", fontSize: "22px" }}
         ></i>
       </div>

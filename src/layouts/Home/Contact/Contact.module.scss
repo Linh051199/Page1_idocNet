@@ -57,6 +57,11 @@
   margin: 45px 0;
 }
 
+.contact__fromFormInput {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
 .contact__formInput {
   height: 40px;
   font-size: var(--font-size18);
@@ -65,7 +70,6 @@
   border-radius: 8px;
   border: 1px solid #e7e7e7;
   outline: none;
-  margin-bottom: 30px;
   &:hover {
     cursor: text;
   }
@@ -73,6 +77,11 @@
     border-color: #2a27e9;
     background-color: #e7e7e7;
   }
+}
+
+.inputMsg {
+  font-size: var(--font-size12);
+  color: red;
 }
 
 .contact__formBtn {
@@ -128,7 +137,7 @@
     font-size: var(--font-size14);
   }
   .contact__form {
-    width: 100%;
+    width: 90%;
     margin-top: 50px;
   }
 }

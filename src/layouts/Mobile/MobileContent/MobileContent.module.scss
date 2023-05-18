@@ -73,17 +73,19 @@
   .content__item {
     margin-right: 0;
   }
-  // .title__showItem {
-  //   display: none;
-  // }
-  .title__list {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+  .title__showItem {
+    display: none;
+  }
+
+  .title__listShow {
+    display: none;
   }
 
   .title__select {
     margin-left: 0;
     margin-top: 30px;
+  }
+  .title__select {
+    width: 100%;
   }
 }

@@ -82,8 +82,14 @@ function Footer() {
 
         <div className={cx("footer__author")}>
           <div className={cx("footer__authorTitle")}>
-            © 2022 Betheme by <a href="#">Muffin group</a> | All Rights Reserved
-            | Powered by <a href="#">WordPress</a>
+            © 2022 Betheme by{" "}
+            <a href="#" style={{ textDecoration: "none" }}>
+              Muffin group
+            </a>{" "}
+            | All Rights Reserved | Powered by{" "}
+            <a href="#" style={{ textDecoration: "none" }}>
+              WordPress
+            </a>
           </div>
           <div className={cx("footer__authorIcon")}>
             <div className={cx("footer__authorIconItem")}>
